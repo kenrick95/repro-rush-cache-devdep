@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "pkg-c",
+  "version": "1.0.0",
+  "bin": "bin.js",
+  "dependencies": {},
+  "devDependencies": {}
+}

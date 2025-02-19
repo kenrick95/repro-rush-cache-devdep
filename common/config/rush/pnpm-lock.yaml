@@ -1,0 +1,27 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: false
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  ../../pkg-a:
+    dependencies:
+      pkg-b:
+        specifier: workspace:*
+        version: link:../pkg-b
+    devDependencies:
+      pkg-c:
+        specifier: workspace:*
+        version: link:../pkg-c
+
+  ../../pkg-b:
+    devDependencies:
+      pkg-c:
+        specifier: workspace:*
+        version: link:../pkg-c
+
+  ../../pkg-c: {}

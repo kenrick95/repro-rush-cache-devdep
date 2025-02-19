@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "pkg-a",
+  "version": "1.0.0",
+  "scripts": {
+    "_phase:meow": "pkg-c"
+  },
+  "dependencies": {
+    "pkg-b": "workspace:*"
+  },
+  "devDependencies": {
+    "pkg-c": "workspace:*"
+  }
+}
